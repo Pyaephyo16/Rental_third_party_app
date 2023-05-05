@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">RentalForU</string>
+    <string name="edit"><u>Edit</u></string>
+    <string name="resend"><u>Resend</u></string>
+    <string name="marqueeText">You can login to use fully function of rentalU app. If you do not hava an account, you can sign up.</string>
+</resources>

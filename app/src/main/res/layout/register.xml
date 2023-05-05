@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bluegray"
+    tools:context=".Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bluegray"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_gravity="bottom"
+            app:cardBackgroundColor="@color/bluegray">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|right"
+                    android:src="@drawable/rp11"
+                    />
+
+                <ImageView
+                    android:id="@+id/registerlogo"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/sup1"
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="22dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="SIGN UP"
+                    android:textColor="@color/bluegray"
+                    android:textAllCaps="true"
+                    android:textSize="32dp"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:elevation="12dp"
+                    app:cardCornerRadius="80dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    android:layout_centerHorizontal="true"
+                    android:innerRadius="0dp"
+                    android:layout_gravity="center"
+                    android:shape="ring"
+                    android:thicknessRatio="0">
+                    <ImageView
+                        android:id="@+id/profile"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/rp6"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <EditText
+                    android:id="@+id/edtName"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/custom_textfield"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:hint="Enter Name..."
+                    android:drawablePadding="6dp"
+                    android:drawableStart="@drawable/user"
+                    android:singleLine="true"
+                    android:paddingLeft="16dp" />
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/custom_textfield"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="34dp"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:hint="Enter Email..."
+                    android:drawablePadding="6dp"
+                    android:drawableStart="@drawable/email"
+                    android:singleLine="true"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="16dp" />
+
+                <EditText
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/custom_textfield"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="34dp"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:hint="Enter Password..."
+                    android:inputType="textPassword"
+                    android:drawablePadding="6dp"
+                    android:drawableStart="@drawable/pswd"
+                    android:singleLine="true"
+                    android:paddingLeft="16dp" />
+
+                <CheckBox
+                    android:id="@+id/passwordCheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Show Password"
+                    android:textColor="@color/black"
+                    >
+                </CheckBox>
+
+                <EditText
+                    android:id="@+id/edtConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/custom_textfield"
+                    android:layout_height="50dp"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:hint="Enter Confirm Password..."
+                    android:drawablePadding="6dp"
+                    android:drawableStart="@drawable/confirm_lock"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:paddingLeft="16dp" />
+
+                <CheckBox
+                    android:id="@+id/confirmPasswordCheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Show Password"
+                    android:textColor="@color/black"
+                    >
+                </CheckBox>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="22dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="right">
+
+                    <Button
+                        android:id="@+id/btnBack"
+                        android:layout_width="80dp"
+                        android:layout_height="60dp"
+                        android:text="Back"
+                        android:layout_marginLeft="16dp"
+                        android:backgroundTint="@color/brown"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        />
+
+                    <Button
+                        android:id="@+id/btnSignUp"
+                        android:layout_width="120dp"
+                        android:layout_height="60dp"
+                        android:text="Sign Up"
+                        android:layout_marginLeft="16dp"
+                        android:backgroundTint="@color/bluegray"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</ScrollView>
